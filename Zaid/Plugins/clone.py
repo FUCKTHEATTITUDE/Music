@@ -14,7 +14,7 @@ IMG = ["https://telegra.ph/file/cefd3211a5acdcd332415.jpg", "https://telegra.ph/
 MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /clone Token from @botfather"
 
 cloner = "6064514369:AAG74aBzqT91-EtPw9xhg8qDNjOXT1aRj5c"
-@cloner.on_message(filters.private & filters.command("start"))
+@Client.on_message(filters.private & filters.incoming & filters.command("start"))
 async def hello(client, message: Message):
     buttons = [
            [
@@ -30,7 +30,7 @@ async def hello(client, message: Message):
 ##Copy from here 
 
 # © By Itz-Zaid Your motherfucker if uh Don't gives credits.
-@cloner.on_message(filters.private & filters.command("clone"))
+@Client.on_message(filters.private & filters.incoming & filters.command("clone"))
 async def clone(bot, msg: Message):
     chat = msg.chat
     text = await msg.reply("Usage:\n\n /clone token")
