@@ -7,12 +7,12 @@ from pyrogram import *
 from pyrogram.types import *
 from random import choice
 from Zaid import client as sys
+from Zaid import cloner, ASSUSERNAME, BOT_NAME
 from Zaid.config import API_ID, API_HASH
 
 IMG = ["https://telegra.ph/file/cefd3211a5acdcd332415.jpg", "https://telegra.ph/file/30d743cea510c563af6e3.jpg", "https://telegra.ph/file/f7ae22a1491f530c05279.jpg", "https://telegra.ph/file/2f1c9c98452ae9a958f7d.jpg"]
 MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /clone Token from @botfather"
-BOT_NAME = "hoster"
-ASSUSERNAME = "@none"
+
 cloner = "6064514369:AAG74aBzqT91-EtPw9xhg8qDNjOXT1aRj5c"
 @cloner.on_message(filters.private & filters.command("start"))
 async def hello(client, message: Message):
