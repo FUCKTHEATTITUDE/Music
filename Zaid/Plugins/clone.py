@@ -7,7 +7,8 @@ from pyrogram.types import *
 from random import choice
 from Heroku import cloner, ASSUSERNAME, BOT_NAME
 from Heroku import client as sys
-from Heroku.config import API_ID, API_HASH
+from Zaid.config import API_ID, API_HASH
+from Zaid.config import LOG_GROUP_ID
 IMG = ["https://telegra.ph/file/cefd3211a5acdcd332415.jpg", "https://telegra.ph/file/30d743cea510c563af6e3.jpg", "https://telegra.ph/file/f7ae22a1491f530c05279.jpg", "https://telegra.ph/file/2f1c9c98452ae9a958f7d.jpg"]
 MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /clone Token from @botfather"
 
